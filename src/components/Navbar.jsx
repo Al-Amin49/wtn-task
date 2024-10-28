@@ -4,10 +4,10 @@ import profile from "../assets/Intersect.png";
 import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
     return (
-        <div className="flex justify-between items-center shadow-md p-4 max-w-[1102px] mx-auto">
-            <div className="flex items-center">
-            <CiSearch/>
-            <input type="text" placeholder="Search here.."  className="p-2 " />
+        <div className="flex justify-between items-center shadow-md p-4 max-w-[1102px] mx-auto rounded-md">
+            <div className="flex items-center relative">
+            <CiSearch className="absolute left-2 mr-2"/>
+            <input type="text" placeholder="Search here.."  className="p-2  pl-8" />
             </div>
             <div className="flex justify-around items-center space-x-10 ">
                 <img src={icons} alt="" className="h-8"/>
