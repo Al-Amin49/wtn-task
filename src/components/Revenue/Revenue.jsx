@@ -11,6 +11,7 @@ import {
     Tooltip,
     Filler,
   } from 'chart.js';
+import { BsThreeDotsVertical } from 'react-icons/bs';
   
   ChartJS.register(
     CategoryScale,
@@ -71,10 +72,13 @@ const Revenue = () => {
     return (
         <div  className='grid grid-cols-1 gap-6 md:grid-cols-2 my-6 mx-4 lg:mx-0  '>
             <div>
-            <h2 className="text-xl font-semibold mb-2">
-        Revenue <span className="font-bold">600 AED</span>
+           <div className='flex items-center justify-between'>
+           <h2 className="text-xl font-semibold ">
+        Revenue <span className="font-bold ">600 AED</span>
       </h2>
-      <Line data={data} options={options} />
+      <BsThreeDotsVertical/>
+           </div>
+      <Line data={data} options={options} className='mt-4'/>
             </div>
             <PendingTask/>
         </div>
