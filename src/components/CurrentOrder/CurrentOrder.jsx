@@ -60,7 +60,7 @@ const CurrentOrder = () => {
         </div>
 
         {/* circle and progress bar */}
-        <div className="flex justify-between items-center mt-6 space-x-3">
+        <div className="flex flex-col lg:flex-row justify-between items-center mt-6 space-x-3">
           {/* Doughnut Chart */}
           <div className="w-[250px] h-[250px]">
             <Doughnut data={doughnutData} options={{ maintainAspectRatio: false }} />

@@ -10,16 +10,20 @@ const Navbar = () => {
             <input type="text" placeholder="Search here.."  className="p-2  pl-8" />
             </div>
             <div className="flex justify-around items-center space-x-3 lg:space-x-10 ">
-                <img src={icons} alt="" className="h-8"/>
+                <img src={icons} alt="" className="h-4 md:h-8"/>
                 <div className="border-r-2 h-8 text-[#C2C2C2]"></div>
               
-              <div className="flex justify-evenly items-center space-x-4">
-                <div className="text-center">
-                    <h6 className="font-semibold">Nayamul Roni</h6>
+              <div className="flex justify-evenly items-center space-x-4 ">
+                <div className="text-center hidden md:block">
+                    <h6 className="text-sm md:text-base font-semibold">Nayamul Roni</h6>
                     <span><small className="text-gray-500 text-center">Super Admin</small></span>
                 </div>
-                <img src={profile} alt="" className="hidden md:block"/>
+              <div>
+              <img src={profile} alt="" className="h-8 md:h-10"/>
+              <p className="block md:hidden"><small className="text-[10px] text-center">Admin</small></p>
               </div>
+              </div>
+             
             </div>
 
         </div>
