@@ -70,7 +70,7 @@ const Revenue = () => {
       };
     
     return (
-        <div  className='grid grid-cols-1 gap-6 md:grid-cols-2 my-6 mx-4 lg:mx-0  '>
+        <div  className='grid grid-cols-1 gap-6 md:grid-cols-2 mt-6 mx-4 lg:mx-0  '>
             <div>
            <div className='flex items-center justify-between'>
            <h2 className="text-xl font-semibold ">
