@@ -3,7 +3,7 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 
 const PendingTask = () => {
     return (
-        <div className='border shadow-md  rounded-md p-4'>
+        <div className='border shadow-md  rounded-md p-4 mt-10 lg:mt-0 w-full'>
       <div className='flex justify-between '>
       <h3>Pending Tasks</h3>
       <BsThreeDotsVertical/>

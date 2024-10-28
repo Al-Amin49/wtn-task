@@ -12,7 +12,7 @@ const Cards = () => {
                     <img src={card.image} alt={card.text} className="h-8 " />
                 </div>
                 <div>
-                <h3 className="text-3xl font-bold">{card.number}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold">{card.number}</h3>
                 <p className="text-sm text-[#757D85]">{card.text}</p>
                 </div>
                  </div>
