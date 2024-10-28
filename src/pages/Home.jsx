@@ -1,15 +1,15 @@
-import Card from "../components/Card";
+import Cards from "../components/Cards";
 import MonthDate from "../components/MonthDate";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
-    return (
-        <>
-         <Navbar/>
-         <MonthDate/>
-         <Card/>
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <MonthDate />
+      <Cards />
+    </>
+  );
 };
 
 export default Home;

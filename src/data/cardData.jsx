@@ -1,9 +1,9 @@
 
-import user from "../assets/cards/user.png";
-import list from "../assets/cards/list.png";
-import spoon from "../assets/cards/spoon-and-fork.png";
-import motorbike from "../assets/cards/motorbike-01.png";
-import cash from "../assets/cards/cash-02.png";
+import user from "../assets/user.png";
+import list from "../assets/list.png";
+import spoon from "../assets/spoon-and-fork.png";
+import motorbike from "../assets/motorbike-01.png";
+import cash from "../assets/cash-02.png";
 
 const cardsData = [
     {
