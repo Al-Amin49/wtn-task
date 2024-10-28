@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center shadow-md p-2 md:p-4  rounded-md">
             <div className="flex items-center relative">
             <CiSearch className="absolute left-2 mr-2"/>
-            <input type="text" placeholder="Search here.."  className="p-2  pl-8" />
+            <input type="text" placeholder="Search here.."  className="p-2 w-3/4 md:w-full pl-8 ml-2 md:ml-0" />
             </div>
             <div className="flex justify-around items-center space-x-1 lg:space-x-10 ">
             
