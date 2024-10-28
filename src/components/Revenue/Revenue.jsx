@@ -30,7 +30,7 @@ const Revenue = () => {
           {
             label: "Revenue",
             data: [0, 100, 200, 300, 400, 500, 600, 400, 300, 450, 500, 480, 600],
-            borderColor: "#A1045A]",
+            borderColor: "#A1045A",
             backgroundColor: "rgba(163, 0, 85, 0.1)", 
             fill: true,
             tension: 0.4, // Smooth curve
