@@ -4,6 +4,12 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import bag from "../../assets/bag.png";
 
 const CurrentOrder = () => {
+    const progressData = [
+        { label: "Active", value: 384, percentage: 43, color: "bg-[#00997E]" },
+        { label: "Pending", value: 125, percentage: 20, color: "bg-[#41A3FF]" },
+        { label: "Refunded", value: 234, percentage: 37, color: "bg-[#FFA133]" },
+        { label: "Cancelled", value: 234, percentage: 37, color: "bg-[#FF1717]" },
+      ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mx-4 lg:mx-0">
       <div className="border p-4 rounded-md">
@@ -41,6 +47,28 @@ const CurrentOrder = () => {
                 <p className="text-[#757D85]">Cancelled</p>
             </div>
         </div>
+
+        {/*circle and  progress bar  */}
+
+        <div className="mt-6">
+        {progressData.map((item, index) => (
+              <div key={index} className="mb-4">
+                <div className="flex justify-between mb-1">
+                  <span className="text-gray-700 font-medium">
+                    {item.label} ({item.percentage}%)
+                  </span>
+                  <span className="text-gray-500">{item.value}</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    className={`h-3 rounded-full ${item.color}`}
+                    style={{ width: `${item.percentage}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+        </div>
+        
       </div>
 
       <ActivityLog />
